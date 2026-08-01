@@ -1,24 +1,32 @@
 #include <iostream>
 using namespace std;
-typedef struct sujata
+struct sujata
 {
     int eid;
     char favchar;
-    float salary;
+    float rice;
+};
+typedef union suje
+{
+    int id;
+    char car;
+    float rice;
+
 } ep;
 
 int main()
 {
-    ep ayush;
-    ayush.eid = 1;
-    ayush.favchar = 'c';
-    ayush.salary = 130000;
-    cout << "THE ID OF SUJATA:\n"
-         << ayush.eid << endl;
-    cout << "THE FAVCHAR OF SUJATA:\n"
-         << ayush.favchar << endl;
 
-    cout << "THE SALARY OF SUJATA :\n"
-         << ayush.salary << endl;
+    ep ayush;
+    ayush.id = 1;
+    ayush.car = 'c';
+    ayush.rice = 130000;
+    cout << "THE ID OF SUJATA:\n"
+         << ayush.id << endl;
+    cout << "THE FAVCHAR OF SUJATA:\n"
+         << ayush.car << endl;
+
+    cout << "THE rice OF SUJATA :\n"
+         << ayush.rice << endl;
     return 0;
 }
